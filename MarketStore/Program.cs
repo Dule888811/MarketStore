@@ -10,13 +10,13 @@ using System.Configuration;
 
 namespace MarketStore
 {
-    class Program
+    class Program 
     {
 
         static void Main(string[] args)
         {
-            Database.CreateDatabase();
-
+           // Database.CreateDatabase();
+            InsertData.InsertDataInDatabase();
       
         }
            

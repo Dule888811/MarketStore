@@ -12,7 +12,7 @@ namespace MarketStore
     {
         public MarketContext(string connectionString)
         {
-            System.Data.Entity.Database.SetInitializer<MarketContext>(new DropCreateDatabaseAlways<MarketContext>());
+            System.Data.Entity.Database.SetInitializer<MarketContext>(null);
             this.Database.Connection.ConnectionString = connectionString;
         }
         public DbSet<User> Users { get; set; }
@@ -20,6 +20,6 @@ namespace MarketStore
 
         public DbSet<Gold> Gold { get; set; }
 
-        public DbSet<Gold> Silver { get; set; }
+        public DbSet<Silver> Silver { get; set; }
     }
 }

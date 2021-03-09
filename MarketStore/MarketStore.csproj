@@ -55,6 +55,7 @@
     <Compile Include="Card.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Gold.cs" />
+    <Compile Include="InsertData.cs" />
     <Compile Include="MarketContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
