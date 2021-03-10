@@ -9,7 +9,7 @@ using System.Configuration;
 
 namespace MarketStore
 {
-   public class InsertUserData
+   public class InsertData
     {
         public static void InsertDataInDatabase() 
         {
@@ -27,17 +27,49 @@ namespace MarketStore
                         using (MarketContext context = new MarketContext(builder.ConnectionString))
                         {
                             User newUser = new User {Id = 1, FirstName = "Anna", LastName = "Shrestinian" };
-                            context.Users.Add(newUser);
-                             context.SaveChanges();
+                                try
+                                {
+                                    context.Users.Add(newUser);
+                                    context.SaveChanges();
+                                }
+                                catch (SqlException e)
+                                {
+                                    Console.WriteLine(e.ToString());
+                                }
+
                     User FirstUser = new User { Id = 2, FirstName = "Aa", LastName = "Shrestin" };
-                            context.Users.Add(FirstUser);
-                            context.SaveChanges();
+                                try 
+                                {
+                                    context.Users.Add(FirstUser);
+                                    context.SaveChanges();
+                                }
+                                catch (SqlException e)
+                                {
+                                    Console.WriteLine(e.ToString());
+                                }
+
                     User NewUser = new User { Id = 3, FirstName = "Ann", LastName = "Shre" };
-                            context.Users.Add(NewUser);
-                            context.SaveChanges();
-                    User OneMorenewUser = new User { Id = 4, FirstName = "Ana", LastName = "Shtinian" };                                                                                                      
-                            context.Users.Add(OneMorenewUser);
-                            context.SaveChanges();
+                                try
+                                {
+                                    context.Users.Add(NewUser);
+                                    context.SaveChanges();
+                                }
+                                catch (SqlException e)
+                                {
+                                    Console.WriteLine(e.ToString());
+                                }
+
+                    User OneMorenewUser = new User { Id = 4, FirstName = "Ana", LastName = "Shtinian" };
+                                try 
+                                {
+                                    context.Users.Add(OneMorenewUser);
+                                    context.SaveChanges();
+                                }
+                                catch (SqlException e)
+                                {
+                                    Console.WriteLine(e.ToString());
+                                }
+
                 }
                     }
                     catch (SqlException e)

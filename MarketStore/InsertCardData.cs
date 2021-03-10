@@ -26,16 +26,40 @@ namespace MarketStore
                 {
                     Bronze Bronze = new Bronze { Id = 1, Turnover = 0, Discount = 0, User_Id = 1 };
                     GetData.valueOfPurchase(Bronze, 150);
-                    context.Bronze.Add(Bronze);
-                    context.SaveChanges();
+                            try 
+                            {
+                                context.Bronze.Add(Bronze);
+                                context.SaveChanges();
+                            }
+                            catch (SqlException e)
+                            {
+                                Console.WriteLine(e.ToString());
+                            }
+
                     Silver Silver = new Silver { Id = 1, Turnover = 600, Discount = 2, User_Id = 2 };
                     GetData.valueOfPurchase(Silver, 850);
-                        context.Silver.Add(Silver);
-                        context.SaveChanges();
+                            try 
+                            {
+                                context.Silver.Add(Silver);
+                                context.SaveChanges();
+                            }
+                            catch (SqlException e)
+                            {
+                                Console.WriteLine(e.ToString());
+                            }
+
                     Gold Gold = new Gold { Id = 1, Turnover = 1500, Discount = 2, User_Id = 3 };
                     GetData.valueOfPurchase(Gold, 1300);
-                        context.Gold.Add(Gold);
-                         context.SaveChanges();
+                            try 
+                            {
+                                context.Gold.Add(Gold);
+                                context.SaveChanges();
+                            }
+                            catch (SqlException e)
+                            {
+                                Console.WriteLine(e.ToString());
+                            }
+
                     Console.WriteLine("Done");
 
                 }
