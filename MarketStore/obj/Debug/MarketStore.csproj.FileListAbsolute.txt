@@ -9,4 +9,3 @@ C:\Users\pc\source\repos\MarketStore\MarketStore\bin\Debug\EntityFramework.SqlSe
 C:\Users\pc\source\repos\MarketStore\MarketStore\bin\Debug\EntityFramework.xml
 C:\Users\pc\source\repos\MarketStore\MarketStore\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\pc\source\repos\MarketStore\MarketStore\obj\Debug\MarketStore.csproj.CopyComplete
-C:\Users\pc\source\repos\MarketStore\MarketStore\obj\Debug\MarketStore.csprojAssemblyReference.cache

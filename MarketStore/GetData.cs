@@ -30,8 +30,6 @@ namespace MarketStore
             {
                 var Total = purchase - ((DiscountRate * purchase) / 100);
                 return Total;
-                //  Console.WriteLine(Discount);
-                //  Console.ReadLine();
             }
             else
             {
