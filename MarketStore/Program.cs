@@ -15,12 +15,12 @@ namespace MarketStore
 
         static void Main(string[] args)
         {
-           // Database.CreateDatabase();
-            InsertData.InsertDataInDatabase();
-      
+            // Database.CreateDatabase();
+            //  InsertUserData.InsertDataInDatabase();
+            InsertCardData.InsertDataInDatabase();
         }
-           
-            }
+
+    }
 
 
         

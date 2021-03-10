@@ -10,7 +10,8 @@ namespace MarketStore
     {
         public int Id { get; set; }
         public decimal Turnover { get; set; }
-        public int Discount { get; set; }
+        public decimal Discount { get; set; }
+        public int User_Id { get; set; }
         public virtual User User { get; set; }
 
         public override string ToString()

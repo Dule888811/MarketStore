@@ -54,8 +54,10 @@
     <Compile Include="Bronze.cs" />
     <Compile Include="Card.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="GetData.cs" />
     <Compile Include="Gold.cs" />
-    <Compile Include="InsertData.cs" />
+    <Compile Include="InsertCardData.cs" />
+    <Compile Include="InsertUserData.cs" />
     <Compile Include="MarketContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
