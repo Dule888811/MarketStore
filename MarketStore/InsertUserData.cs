@@ -9,7 +9,7 @@ using System.Configuration;
 
 namespace MarketStore
 {
-   public class InsertData
+   public class InsertUserData
     {
         public static void InsertDataInDatabase() 
         {
